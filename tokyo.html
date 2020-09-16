@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="layout.css">
+
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="layout.html">London</a></li>
+      <li><a href="paris.html">Paris</a></li>
+      <li><a href="tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Tokyo</h1>
+    <form action="tokyo.jsp" method="POST">
+        <fieldset>
+            <p>아이디: <input type="text" name="ID"><input type="button" value="ID중복확인" onclick="openIdChk()"></p>
+            <p>생년월일: <input type="date" name="birth"></p>
+            <p>성별: <input type="radio" name="gender" value="male" checked>남성 <input type="radio" name="gender" value="female" >여성</p>
+            <p>Email: <input type="email" name="email"></p>
+            <p>메일수신: <input type="radio" name="chk" value="agree" checked>수신동의<input type="radio" name="email" value="refuse">수신거부</p>
+            <p>핸드폰: <select name="phone">
+                <option value="1" selected>010</option>
+                <option value="2" selected>011</option>
+                <option value="3" selected>012</option>
+            </select>-
+            <input type="text" name="phone">-
+            <input type="text" name="phone"></p>
+            <p>직업: <select name="job">
+                <option value="1" selected>학생</option>
+                <option value="2" selected>선생님</option>
+                <option value="3" selected>군인</option>
+            </select></p>
+            <p>취미: <input type="radio" name="hobby" value="1" checked>쇼핑
+                <input type="radio" name="hobby" value="2" >인터넷
+                <input type="radio" name="hobby" value="3" >음악감상
+                <input type="radio" name="hobby" value="4" >독서
+                <input type="radio" name="hobby" value="5" >스포츠</p>
+            <p>자기 소개:<textarea cols="30" rows="4"></textarea></p>
+        </fieldset>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+    
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
