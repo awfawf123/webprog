@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link type="text/css" rel="stylesheet" href="override.css"></link> -->
+<!-- <style>
+    p{ color: blue;}
+    p{ color: yellow;}
+    p{ color: red;}
+</style> -->
+</head>
+
+<body>
+    <input type="text">~
+    <input type="text" >=
+    <input type="text" >
+    <!-- <p>CSS가 중복 정의된 경우 어떤 것이 적용될까</p> -->
+    <p/>
+    <input type="button" id="btn" value="OK">
+    <p/>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var inputs = document.querySelectorAll("[type='text']");
+
+        console.log(inputs);
+        btn.onclick = function() {
+            var fv = inputs[0].value;
+            var tv=inputs[1].value;
+            var rs = document.querySelectorAll("div")[0];
+        // var fv = document.getElementById("fromValue").value;
+        // var tv = document.getElementById("toValue").value;
+        // var rs = document.getElementById("result");
+        fv=parseInt(fv);
+        tv=parseInt(tv);
+            var result = "hello";
+            result=0;
+            for( var i=fv; i <= tv; i++){
+                result += i;
+                
+            
+            }
+            rs=result;
+            console.log(result);
+        }
+    </script>
+</body>
+</html>
