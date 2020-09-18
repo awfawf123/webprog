@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .header {
+           
+            background-image: url("image.jpg");
+            padding: 40px;
+            text-align: left;
+            
+            
+        }
+        ul{
+            list-style-type: circle;
+            margin: auto;
+            padding: 0%;
+            width: 20%;
+            background-color: bisque;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            color: rgb(15, 1, 1);
+            padding: 3%;
+            font-size: 150%;
+        }
+        li a.active{
+            background-color: rgb(247, 36, 8);
+            padding: 5%; 
+            color: white;
+            font-size: 200%;
+        }
+        li a:hover:not(.active){
+            background-color: white;
+            color: black;
+        }
+        ul.li.fakeimg {
+     position: relative;
+    width: 200%;
+    padding: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Travel</h1>
+    </div>
+    <ul>
+        <li><a href="main.html" class="active">대한민국</a></li>
+        <li><a href="seoul.html">서울</a></li>
+        <li><a href="busan.html">부산</a></li>
+        <li><a href="daegu.html">대구</a></li>
+        <li><a href="#daejun">대전</a></li>
+    </ul>
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <h1>서울</h1>
+    <p><img src="seoul.png"></p>
+    </div>
+
+</body>
+</html>

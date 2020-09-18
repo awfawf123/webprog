@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .header {
+           
+            background-image: url("image.jpg");
+            padding: 40px;
+            text-align: left;
+            
+            
+        }
+        ul{
+            list-style-type: circle;
+            margin: auto;
+            padding: 0%;
+            width: 20%;
+            background-color: bisque;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            color: rgb(15, 1, 1);
+            padding: 3%;
+            font-size: 150%;
+        }
+        li a.active{
+            background-color: rgb(247, 36, 8);
+            padding: 5%; 
+            color: white;
+            font-size: 200%;
+        }
+        li a:hover:not(.active){
+            background-color: white;
+            color: black;
+        }
+        ul.li.fakeimg {
+     position: relative;
+    width: 200%;
+    padding: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Travel</h1>
+    </div>
+    <ul>
+        <li><a href="main.html" class="active">대한민국</a></li>
+        <li><a href="seoul.html">서울</a></li>
+        <li><a href="busan.html">부산</a></li>
+        <li><a href="daegu.html">대구</a></li>
+        <li><a href="#daejun">대전</a></li>
+    </ul>
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <h1>대한민국 소개 개요</h1>
+    <p>대한민국은 동아시아의 한반도에 위치한 대통령제 공화국이다. 서쪽으로 중화인민공화국, 동쪽으로 일본에 접해 있으며, 북쪽으로 조선민주주의인민공화국과 닿아 있다. 수도이자 최대 도시는 서울특별시이다.
+        
+        한반도는 제2차 세계 대전에서 일본이 패전한 이후 분단되었으며, 1948년에 대한민국이 수립되었다. 대한민국은 이후 미국과의 동맹을 유지하며 성공적으로 민주주의를 발전시켰다.
+        
+        대한민국은 1960년대부터 1980년대까지 세계에서 가장 빠른 경제 성장을 이룬 국가들 중 하나이며 선진국으로 여겨지고 있다.<br>
+        [1] 대한민국은 G20과 경제협력개발기구의 회원국이다. 조선민주주의인민공화국과의 긴장 상태로 인해, 대한민국은 세계 6위의 군사 대국이며 세계 10위의 국방비를 지출하고 있다.
+        
+        대한민국의 산업은 과학과 기술 분야에 집중되어 있다.<br>
+        [2] 기반 시설과 대규모 가족 기업인 재벌이 주도하는 반도체, 액정 디스플레이, 컴퓨터, 휴대 전화 등의 정보기술이 발달해 있다.<br>
+        [3] 대한민국의 경제는 건설, 공학, 기계, 로봇공학, 생명공학기술, 석유화학 분야에 집중되어 있다.</p>
+    </div>
+    <p><iframe style="margin-left:20%;padding:1px 16px;height:1000px;" width ="500" height="200" src="https://www.youtube.com/watch?v=lFnm1fY6pjU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+</body>
+</html>
